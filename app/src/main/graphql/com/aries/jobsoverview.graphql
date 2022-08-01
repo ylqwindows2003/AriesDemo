@@ -1,0 +1,11 @@
+query JobsOverviewQuery($type:String!) {
+    jobs(input: {type: $type}) {
+    	id
+		title
+		company {
+			name
+			logoUrl
+		}
+		description
+    }
+}
